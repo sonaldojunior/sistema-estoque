@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href = "/style.css"/>
+    <title>deletar produto</title>
+</head>
+<body class="adicionar">
+    <div class="criar delete">
+        <h1>Deletar produto em estoque</h1>
+        <a href="/">Voltar a página inicial</a><br>
+
+        <form action="/Delete/:id" method="get">
+            <label for="id">Digite o ID do Produto a ser deletado:</label><br>
+            <input type="text" name="id" id="id"placeholder='ex:62eb053457e4e8b4f2d399e9'><br>
+            <input class="button" type="submit" value="Deletar produto">
+        </form>
+    </div>
+</body>
+</html>

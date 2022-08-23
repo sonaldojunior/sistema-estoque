@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href = "/style.css"/>
+    <title>atualizar produto</title>
+</head>
+<body class="adicionar">
+    <div class="criar atualizar">
+        <h1>Atualizar um produto em estoque</h1>
+
+        <a href="/">Voltar a página inicial</a><br>
+
+        <form action="/estoqueUpdate1" method="post">
+            <label for="id">Digite o id do produto:</label><br>
+            <input type="text" name="id" id="id"placeholder='ex:62eb053457e4e8b4f2d399e9'><br>
+
+            <label for="material">Digite o nome do produto:</label><br>
+            <input type="text" name="material" id="material"placeholder="ex: avery 3800"><br>
+
+            <label for="medida">Digite a medida:</label><br>
+            <input type="text" name="medida" id="medida"placeholder="ex: 152"><br>
+
+            <label for="quantidade">Digite a quantidade em estoque:</label><br>
+            <input type="text" name="quantidade" id="quantidade"placeholder="ex: 15"><br>
+
+            <input class="button" type="submit" name="enviar" value="Atualizar">
+        </form>
+    </div>
+</body>
+</html>

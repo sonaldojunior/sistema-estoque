@@ -1,0 +1,7 @@
+//essa pasta deixa o mustache com autocomplete
+
+{
+    "emmet.includeLanguages": {
+      "mustache": "html"
+    }
+  }

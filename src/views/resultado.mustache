@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href = "/style.css"/>
+    <title>Listar estoque</title>
+</head>
+<body class="adicionar">
+    <ul>
+        {{#list}}
+            <li><strong>Material</strong>= {{material}} - <strong>Medida</strong>= {{medida}} - <strong>Quantidade</strong>= {{quantidade}} - <strong>ID</strong>= {{id}} </li><hr>
+        {{/list}}
+    
+        {{#materialItem}}
+            <li><strong>Material</strong>= {{material}} - <strong>Medida</strong>= {{medida}} - <strong>Quantidade</strong>= {{quantidade}}- <strong>ID</strong>= {{id}}</li> <hr>
+        {{/materialItem}}
+    </ul>
+    {{#newProduct}}
+        <h2>Produto cadastrado com sucesso.</h2>
+    {{/newProduct}}
+    {{#productExists}}
+        <h2>Produto já existe no banco de dados</h2>
+    {{/productExists}}
+
+    {{#productUpdate}}
+        <h2>Produto atualizado com sucesso.</h2>
+    {{/productUpdate}}
+
+    {{#productDelete}}
+        <h2>Produto deletado com sucesso.</h2>
+    {{/productDelete}}
+    <a href="/">Voltar a página inicial</a><br>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href = "/style.css"/>
+    <title>Listar item</title>
+</head>
+<body class="adicionar">
+    <div class="criar delete">
+        <h1>Listar apenas um produto em estoque</h1>
+        <a href="/">Voltar a página inicial</a><br>
+        <form action= "/estoque/:material" method="get">
+            <label for="material">Digite o nome do material:</label><br>
+            <input type="text" name="material" id="material"placeholder="ex: avery 3800"><br>
+
+            <input class="button" type="submit" value="Listar Item do Produto">
+        </form>
+    </div>
+</body>
+</html>
